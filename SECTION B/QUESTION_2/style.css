@@ -1,0 +1,61 @@
+/* Basic styles for the navbar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #be0c0c;
+    color: #fff;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex; /* to display the links in a row*/
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px; /* creating apace between the links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #f1c40f;
+}
+
+/* Mobile responsivenes/media queries */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /*vertical stacking of navigation items */
+        text-align: center;
+    }
+
+    .nav-links {
+        display: block; /* vertical stacking of navigation links*/
+        margin-top: 20px;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* spacing links, margin top and botton */
+    }
+
+    .nav-links a {
+        font-size: 20px; /* increasing font on smaller screen */
+    }
+}

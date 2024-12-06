@@ -1,0 +1,57 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: blue;
+  }
+  
+  /* Card Container */
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  /* Individual cards */
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: rgb(58, 58, 99);
+  }
+  
+  .card p {
+    font-size: 1rem;
+  
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .card-container {
+      grid-template-columns: 1fr;  /* stacking the cards */
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .card-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
